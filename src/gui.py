@@ -111,8 +111,8 @@ run_button = Button(root, text="开始算卦", command=lambda: find_lose(date_en
 run_button.grid(row=run_row + 1, column=0, columnspan=2, sticky='s')
 
 # 设置网格布局列居中
-# root.grid_columnconfigure(0, weight=1)
-# root.grid_columnconfigure(1, weight=1)
+root.grid_columnconfigure(0, weight=1)
+root.grid_columnconfigure(1, weight=1)
 
 # 调整窗口大小
 root.geometry("300x250")  # 设置窗口大小

@@ -1,5 +1,5 @@
 from tkinter import END
-from dirt_lib import name_list
+from result_lib import name_list
 
 
 def chick_input(date_entry, time_entry):
@@ -67,31 +67,14 @@ def time_to_serial_number_of_zodiac(time):
 
 # 根据数字获得对应掌决
 def get_name(first_num, second_num, third_num):
-    # first_index = first_num % 6
-    # first_name = name_list[first_index]  # 第一个掌决
-    #
-    # if (first_index + second_num - 1) % 6:
-    #     second_index = (first_index + second_num - 1) % 6
-    #     second_name = name_list[second_index]  # 第二个掌决
-    # else:
-    #     second_index = 6
-    #     second_name = name_list[second_index]  # 第二个掌决
-    #
-    # if (second_index + third_num - 1) % 6:
-    #     third_index = (second_index + third_num - 1) % 6
-    #     third_name = name_list[third_index]  # 第三个掌决
-    # else:
-    #     third_index = 6
-    #     third_name = name_list[third_index]
-
     first_index = (first_num - 1) % 6
-    first_name = name_list[first_index]
+    first_name = name_list[first_index]     # 第一个掌决
 
     second_index = (first_index + second_num - 1) % 6
-    second_name = name_list[second_index]
+    second_name = name_list[second_index]   # 第二个掌决
 
     third_index = (second_index + third_num - 1) % 6
-    third_name = name_list[third_index]
+    third_name = name_list[third_index]     # 第三个掌决
     return first_name, second_name, third_name
 
 

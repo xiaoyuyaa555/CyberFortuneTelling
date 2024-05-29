@@ -1,5 +1,5 @@
 from base_function import *
-from dirt_lib import result_find
+from result_lib import result_of_find
 
 #  寻找按钮的接口函数，用来调用具体的找东西的函数
 def find_lose(in_date_entry, in_time_entry, in_name_print, in_result_print):
@@ -27,13 +27,11 @@ def find_lose_imp(first_num, second_num, third_num, result_print, name_print):
     # print(first_index, first_name, second_index, second_name, third_index, third_name)
 
     # 根据掌决获得结果
-    result = get_result(second_name, third_name, result_dirt=result_find)
+    result = get_result(second_name, third_name, result_dirt=result_of_find)
 
     # 在输出框输出对应信息
     print_name(first_name, second_name, third_name, name_print)     # 输出掌决结果
     print_result(result_print, result)                              # 输出解卦结果
 
     return
-
-# 检查输入的格式
 

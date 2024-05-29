@@ -1,5 +1,5 @@
 from base_function import *
-from dirt_lib import result_fortune
+from result_lib import result_of_fortune
 
 
 def fortune_forecast(in_date_entry, in_time_entry, in_name_print, in_result_print):
@@ -26,7 +26,7 @@ def fortune_forecast_imp(first_num, second_num, third_num, result_print, name_pr
     # print(first_index, first_name, second_index, second_name, third_index, third_name)
 
     # 根据掌决获得结果
-    result = get_result(second_name, third_name, result_dirt=result_fortune)
+    result = get_result(second_name, third_name, result_dirt=result_of_fortune)
 
     # 在输出框输出对应信息
     print_name(first_name, second_name, third_name, name_print)  # 输出掌决结果
